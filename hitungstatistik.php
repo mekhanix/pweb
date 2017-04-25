@@ -1,57 +1,29 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<title></title>
+<link rel="stylesheet" type="text/css" href="style.css">
+	<title>Hitung Statistik</title>
 </head>
 <body>
+<h2>Hitung Statistik</h2>
 <!-- form input -->
-<div class="input">
+<div id="kiri">
 <form action="hitungstatistik.php" method="get">
-	<ul>
-		<li>
-			<label>Data 1</label>
-			<input type="text" name="data1"><br><br>
-		</li>
-		<li>
-			<label>Data 2</label>
-			<input type="text" name="data2"><br><br>
-		</li>
-		<li>
-			<label>Data 3</label>
-			<input type="text" name="data3"><br><br>
-		</li>
-		<li>
-			<label>Data 4</label>
-			<input type="text" name="data4"><br><br>
-		</li>
-		<li>
-			<label>Data 5</label>
-			<input type="text" name="data5"><br><br>
-		</li>
-		<li>
-			<label>Data 6</label>
-			<input type="text" name="data6"><br><br>
-		</li>
-		<li>
-			<label>Data 7</label>
-			<input type="text" name="data7"><br><br>
-		</li>
-		<li>
-			<label>Data 8</label>
-			<input type="text" name="data8"><br><br>
-		</li>
-		<li>
-			<label>Data 9</label>
-			<input type="text" name="data9"><br><br>
-		</li>
-		<li>
-			<label>Data 10</label>
-			<input type="text" name="data10"><br><br><br>
-		</li>
-	</ul>
-			<input type="submit" name="submit" value="submit">
+<div label="lf"><label for="d1">Data ke 1</label><input type="text" name="data1"></div>
+<div label="lf"><label for="d2">Data ke 2</label><input type="text" name="data2"></div>
+<div label="lf"><label for="d3">Data ke 3</label><input type="text" name="data3"></div>
+<div label="lf"><label for="d1">Data ke 4</label><input type="text" name="data4"></div>
+<div label="lf"><label for="d2">Data ke 5</label><input type="text" name="data5"></div>
+<div label="lf"><label for="d3">Data ke 6</label><input type="text" name="data6"></div>
+<div label="lf"><label for="d1">Data ke 7</label><input type="text" name="data7"></div>
+<div label="lf"><label for="d2">Data ke 8</label><input type="text" name="data8"></div>
+<div label="lf"><label for="d3">Data ke 9</label><input type="text" name="data9"></div>
+<div label="lf"><label for="d3">Data ke 10</label><input type="text" name="data10"></div>
+<div label="lf" align="right" style="width=100px"><input type="submit" name="submit"></div>
+<div label="lf" align="right" style="width=100px"><button type="reset" value="Reset">Clear</button></div>
+
+</form>
 </div>
-</form><br><br>
 <?php
 $min = 0;
 $max = 0;
@@ -94,20 +66,16 @@ if (isset($_GET['submit'])) {
 
 
 ?>
+<div id="kanan">
+<form>
+<div label="rf"><label for="min">MIN</label><input type="text" name="min" value="<?php echo $min; ?>"></div>
+<div label="rf"><label for="max">MAX</label><input type="text" name="max" value="<?php echo $max; ?>"></div>
+<div label="rf"><label for="average">AVERAGE</label><input type="text" name="avg" value="<?php echo $average; ?>"></div>
+<div label="rf"><label for="median">MEDIAN</label><input type="text" name="med" value="<?php echo $median; ?>"></div>
+<div label="rf"><label for="modus">MODUS</label><input type="text" name="mod" value="<?php echo $modus; ?>"></div>
 
-<label>MIN</label>
-<input type="text" name="min" value="<?php echo $min; ?>" />
-<label>MAX</label>
-<input type="text" name="max" value="<?php echo $max; ?>" />
-<label>AVERAGE</label>
-<input type="text" name="avg" value="<?php echo $average; ?>" />
-<label>MODUS</label>
-<input type="text" name="mode" value="<?php echo $modus; ?>" />
-<label>MEDIAN</label>
-<input type="text" name="mode" value="<?php echo $median; ?>" />
-
-
-
+</form>
+</div>
 </body>
 </html>
 

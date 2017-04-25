@@ -1,0 +1,54 @@
+h2{
+  margin-left: 70px;
+  font-size: 1.875em;
+  font-style: italic;
+}
+body{
+  margin: auto;
+  margin-top: 50px;
+}
+
+#kiri{
+float: left;
+}
+
+#kanan{
+  float: right;
+  margin-right: 500px;
+}
+#sub{
+  margin-left: 500px;
+}
+
+label { 
+  padding-right: 25px;
+  display: inline-block;
+  width: 140px;
+  height: 30px;
+  text-align: right;
+
+}​
+
+.lf{
+  margin-left: 50px;
+}
+input[type=submit] {
+    width: 50%;
+    padding:5px 15px; 
+    background:#ccc; 
+    border:0 none;
+    cursor:pointer;
+    -webkit-border-radius: 5px;
+    border-radius: 5px; 
+    margin-bottom: 15px; 
+}
+button {
+    width: 50%;
+    padding:5px 15px; 
+    background:#ccc; 
+    border:0 none;
+    cursor:pointer;
+    -webkit-border-radius: 5px;
+    border-radius: 5px;
+
+}
